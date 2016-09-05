@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+<!--hibernate映射，与数据表的字段一一对应  -->
+<!-- 定义字段分别为id ， usename ，password ，email -->
+<hibernate-mapping>   
+    <class name="com.wangxiang.entity.User" table="user" >  
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+        </id>
+        <property name="useName" type="java.lang.String" >
+            <column name="useName" length="25"  />
+        </property>
+        
+        <property name="password" type="java.lang.String" >
+            <column name="password" length="25"  />
+        </property>       
+        
+        <property name="email" type="java.lang.String" >
+            <column name="email" length="30"  />
+        </property>   
+    </class>    
+</hibernate-mapping>

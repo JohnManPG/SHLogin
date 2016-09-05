@@ -1,0 +1,1 @@
+基于Struts2、Hibernate的登录注册系统，涉及Struts2、Hibernate框架的基础API的使用，欢迎大家下载学习！
